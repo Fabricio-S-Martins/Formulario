@@ -19,7 +19,7 @@ if($_SESSION['aviso']){
 </head>
 <body>
     
-    <form method="POST" action="recebedor.php">
+    <form method="POST" action="recebedor.php" enctype="multipart/form-data">
 
     
         <label>
@@ -42,6 +42,14 @@ if($_SESSION['aviso']){
             Email:
             <br>
             <input type="text" name="email">
+        </label>
+        <br>
+        <br>
+
+        <label>
+            Arquivo:
+            <br>
+            <input type="file" name="arquivo">
         </label>
         <br>
         <br>
