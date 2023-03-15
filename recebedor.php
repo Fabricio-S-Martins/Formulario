@@ -6,6 +6,9 @@ $idade = filter_input(INPUT_POST, 'idade', FILTER_SANITIZE_NUMBER_INT);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
 if($nome){
+    $expiracao = time() + (86400 * 30);
+    setcookie('nome', $nome, $expiracao);
+
     require('header.php');
 
     echo 'NOME: '.$nome."<br>";

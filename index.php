@@ -48,5 +48,7 @@ if($_SESSION['aviso']){
 
         <input type="submit" value="Enviar">
     </form>
+
+    <a href="apagar.php">Apagar Cookie</a>
 </body>
 </html>
